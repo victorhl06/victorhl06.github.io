@@ -51,9 +51,20 @@ h1 {
   font-style: italic;
 }
 
-img {
-  height: 100px
-  width: 200px
+.galleri {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-auto-rows: 10px;
+  gap: 20px;
+  padding: 20px;
+}
+
+.galleri img {
+  width: 100%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  object-fit: cover;
+  display: block;
+  grid-row: span 30;
 }
 
 #footer {
